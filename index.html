@@ -1,0 +1,116 @@
+'
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Javascript day 5</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+</head>
+
+<body>
+  <!-- BÀI 1: QUẢN LÝ TUYỂN SINH -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">
+            Bài 1: Quản lý tuyển sinh
+          </div>
+          <div class="card-body">
+            <div class="form-group">
+              <label for="">Điểm chuẩn hội đồng</label>
+              <input type="number" id="txtDiemChuan" name="" class="form-control"
+                placeholder="Hãy nhập điểm chuẩn hội đồng..." />
+            </div>
+            <div class="form-group">
+              <label for="">Điểm môn 1</label>
+              <input type="number" name="" id="txtDiem_1" class="form-control" placeholder="" />
+            </div>
+            <div class="form-group">
+              <label for="">Điểm môn 2</label>
+              <input type="number" name="" id="txtDiem_2" class="form-control" placeholder="" />
+            </div>
+            <div class="form-group">
+              <label for="">Điểm môn 3</label>
+              <input type="number" name="" id="txtDiem_3" class="form-control" placeholder="" />
+            </div>
+            <hr />
+            <div class="form-group">
+              <label for="">Chọn khu vực</label>
+              <select class="form-control" name="" id="txtKhuVuc" required="required">
+                <option value="" disabled selected>Vui lòng chọn khu vực</option>
+                <option value="2">A</option>
+                <option value="1">B</option>
+                <option value="0.5">C</option>
+                <option value="0">X: Không ưu tiên</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="">Đối tượng dự thi</label>
+              <select class="form-control" name="" id="txtDoiTuong" required="required">
+                <option value="" disabled selected>Vui lòng chọn đối tượng dự thi</option>
+                <option value="0">0: Không thuộc đối tượng ưu tiên</option>
+                <option value="2.5">1</option>
+                <option value="1.5">2</option>
+                <option value="1">3</option>
+              </select>
+            </div>
+            <button id="btnKetQua" class="btn btn-success">
+              Tính toán
+            </button>
+          </div>
+          <div id="showKetQua"></div>
+          <div class="card-footer text-muted"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <!-- BÀI 2: TÍNH TIỀN ĐIỆN -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">
+            Bài 2: Tính tiền điện
+          </div>
+          <div class="card-body">
+            <div class="form-group">
+              <label for="">Tên chủ hộ</label>
+              <input type="text" name="" id="txtTenChuHo" class="form-control" placeholder="" />
+            </div>
+            <div class="form-group">
+              <label for="">Nhập số lượng điện tiêu thụ</label>
+              <input type="number" name="" id="txtLuongDien" class="form-control" placeholder="" />
+            </div>
+            <button id="btnKetQua_2" class="btn btn-primary">
+              Tính toán
+            </button>
+          </div>
+          <div id="showKetQua_2"></div>
+          <div class="card-footer text-muted"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>
